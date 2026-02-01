@@ -148,7 +148,7 @@ After this code executes, the sensor can be accessed directly using the SensorMa
 
 ### Reading Sensor Data
 1.	Inside onSensorChanged(), we read the sensor value:
-2.	
+   
  ```kotlin
 val luxValue = event.values[0]
 }

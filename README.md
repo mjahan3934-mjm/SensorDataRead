@@ -71,7 +71,7 @@ First, we connect to the device's built in Ambient Light Sensor using android se
 1.	In Android Studio, an Android application project is created using Empty Views Activity with Kotlin. 
 
 2.  To use the ambient light sensor, the required sensor feature is declared in the app's AndroidManifest.xml file as follows:
-3.  
+  
 ```kotlin
 <uses-feature
     android:name="android.hardware.sensor.light"

@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SensorDataRead" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    </style>
+
+    <style name="Theme.SensorDataRead" parent="Base.Theme.SensorDataRead">
+        <item name="colorPrimary">@color/transparent</item>
+    </style>
+</resources>

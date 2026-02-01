@@ -122,8 +122,10 @@ class MainActivity : AppCompatActivity(), SensorEventListener
 ```
 
 2.	This requires overriding two methods:
-•	onSensorChanged()
-•	onAccuracyChanged()
+   
+   -	onSensorChanged()
+
+   -	onAccuracyChanged()
 
 ### Initialization in onCreate() Method
 	Call super.onCreate() and set up view binding:

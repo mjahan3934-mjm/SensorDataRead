@@ -43,7 +43,7 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
 
     override fun onSensorChanged(event: SensorEvent?) {
         if (event?.sensor?.type == Sensor.TYPE_LIGHT) {
-            // The values array holds the sensor data. For light sensor, it has one value: lux
+          
             val luxValue = event.values[0]
             Log.d(TAG, "Current light level: $luxValue lux")
             val (status, color) = when {
@@ -51,18 +51,17 @@ class MainActivity : AppCompatActivity(), SensorEventListener {
                 luxValue < 100 -> "Semi-Dark" to android.graphics.Color.GRAY
                 else -> "Light" to android.graphics.Color.WHITE
             }
-            // Update your UI element here, e.g.:
-            // sensorTextView.text = "Light: $luxValue lux"
+          
             binding.tvLightSensorValue.text = "Light: $luxValue lux\nStatus: $status"
 
-            // Change the text color so it's visible on dark backgrounds
+     
             if (status == "Dark") {
                 binding.tvLightSensorValue.setTextColor(android.graphics.Color.WHITE)
             } else {
                 binding.tvLightSensorValue.setTextColor(android.graphics.Color.BLACK)
             }
 
-            // Change the background color of the root layout
+      
             binding.root.setBackgroundColor(color)
         }
     }
